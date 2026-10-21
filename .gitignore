@@ -1,0 +1,5 @@
+﻿node_modules/
+*.tgz
+dev/sample.stl
+dev/shot-*.png
+scripts/shots/

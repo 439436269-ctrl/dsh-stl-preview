@@ -91,3 +91,30 @@ Screenshots: `scripts/shots/03-preview.png` (solid), `04-wireframe.png`
 | The first render showed a large dark panel | the same Z-up issue viewed from the side, not a lighting bug | after the rotation the tray lies flat and the key light reads correctly |
 | Cross-realm `deepStrictEqual` failures in `node:vm` tests | arrays created inside the browser sandbox have a different prototype | compare `Array.from(...)` / map into the host realm |
 | The route answered 500 for every normal request in tests | the route reads `ctx.fs` at request time but the fixture only had a local `fs` variable | put `fs` on the context (`ctx = { fs, connection }`) |
+
+## Release — 0.1.0 (2026-10-21)
+
+| Item | Value |
+|---|---|
+| GitHub | https://github.com/439436269-ctrl/dsh-stl-preview (public, topics `dsh-plugin` + `stl`/`3d`/`3d-printing`/`mesh`/`preview`) |
+| Branch / tag | `main` at `c781673`, tag `v0.1.0` → `c781673` |
+| Release | https://github.com/439436269-ctrl/dsh-stl-preview/releases/tag/v0.1.0 |
+| CI | `ci` workflow **success** on `c781673` (Node 22 + 24) |
+| npm | `dsh-stl-preview@0.1.0`, `dist-tags.latest = 0.1.0` |
+| Published | 2026-10-21T06:40:13.232Z |
+| shasum / integrity | `e173d8a080fd1e63c2ac36ad2648f1e004593755` / `sha512-tvVIIj4khyq9OYraEL040BQ6WU3sFLLGo9ydV9YjP/0nwGqMhlCXUKZCM6eKXkvsMU0pEnrhvM/TpkjfkKfbNA==` |
+| Tarball | 12 files, 98,962 B unpacked |
+| Install | `dsh plugin --profile <profile> add dsh-stl-preview@0.1.0` |
+
+Artifact read-back (`verify_npm_artifact.py`): `dist-tags.latest = 0.1.0`;
+downloaded tarball sha1 == `dist.shasum`; sha512 integrity verified; **local
+tgz byte-identical** to the registry tarball; 11 of 12 files byte-identical and
+`package.json` semantically equal (npm repacks it). `lib/client.js` sha256
+`FE69C3634C3069341AA4B62D3D509EBFFCD92F49AE20438616C3471D9DB442FA` matches the
+built file.
+
+Desktop profile: dependency switched from the local tarball to
+`dsh-stl-preview@0.1.0` (explicit version bypasses the 24 h release-age gate;
+pnpm recorded it in `minimumReleaseAgeExclude`), installed client hash still
+matches the build.
+

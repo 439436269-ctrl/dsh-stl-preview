@@ -1,3 +1,5 @@
+> **Renamed:** the canonical package is now [`dsh-preview-stl`](https://github.com/439436269-ctrl/dsh-preview-stl). This repository is kept as the legacy 0.1.x home.
+
 # dsh-stl-preview
 
 Preview **STL** meshes inside [DeepSeek Harness](https://github.com/deepseek-ai): the right-Sidebar document preview renders the triangles in an interactive 3D viewport and reports the numbers that matter for 3D printing — size, volume, surface area and watertightness.
